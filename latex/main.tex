@@ -1,0 +1,47 @@
+\newcommand*{\includesDirectory}{includes}
+\newcommand*{\settingsDirectory}{\includesDirectory/settings}
+
+\input{\settingsDirectory/geometry}
+\input{\settingsDirectory/language}
+\input{\settingsDirectory/table_of_contents}
+\input{\settingsDirectory/chapters}
+
+
+\begin{document}
+	\thispagestyle{empty}
+	\vspace*{\fill}
+			\begin{center}
+				\Huge{
+					\textit{\texttt{PROJEKT JĘZYK R}}
+				}
+			\end{center}
+	\vspace*{\fill}
+			\begin{tabular}{ll}
+				\texttt{zbiór danych:}  & \texttt{Video Game Sales \cite{source}}\\
+				\texttt{autor:}         & \texttt{Marcin Belicki}\\
+				\texttt{numer indeksu:} & \texttt{273417}
+			\end{tabular}
+	\newpage
+	\setlength{\parindent}{9mm}
+	
+	\section{Opis zbioru danych}
+	
+	\section{Ilustracja graficzna zmiennej głównej}
+	
+	\section{Obliczenie podstawowych statystyk opisowych zmiennej głównej}
+	
+	\section{Dobór zmiennych (przynajmniej trzech), które mogą mieć wpływ na zmienną główną}
+	
+	\section{Graficzna prezentacja wybranych w poprzednim kroku zmiennych}
+	
+	\section{Charakterystyka powyższych zmiennych (statystyki opisowe lub rozkłady liczebności, w zależności od klasy zmiennych)}
+	
+	\section{Graficzna prezentacja zależności}
+	
+	\section{Wykonanie odpowiedniego testu statystycznego, który potwierdzi lub odrzuci hipotezę o zależności}
+
+	\section{Wnioski}
+
+
+	\include{\includesDirectory/bib}
+\end{document}

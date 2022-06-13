@@ -1,0 +1,28 @@
+\usepackage{titletoc}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+\setcounter{tocdepth}{1}
+
+\renewcommand\thechapter{Rozdział \Roman{chapter}}
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+\contentsmargin{0.5cm}
+\newlength\chapterlength
+\settowidth\chapterlength{\hspace{2.5cm}}
+
+\titlecontents{chapter}
+    [\chapterlength] %5.3
+    {\vspace{0.2cm}}
+    {\contentslabel[\thecontentslabel]{\chapterlength}}%\thecontentslabel
+    {\hspace*{-\chapterlength}}% unnumbered chapters
+    {\titlerule*[1cm]{.}\contentspage}[\vspace{0.2cm}]%
+
+\titlecontents{section}
+    [\chapterlength] %5.3
+    {\small}
+    {\contentslabel[\thecontentslabel]{0.5cm}}
+    {}
+    {\titlerule*[0.5cm]{.}\contentspage}[]
+
+
+

@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.dvi
+*.toc
+*.bbl
+*.blg
+*.gz
+*.out
+*.DS_Store
